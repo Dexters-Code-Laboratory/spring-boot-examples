@@ -1,6 +1,6 @@
 package com.springboot.example.springbootexamples.repoService;
 
-import com.springboot.example.springbootexamples.domain.domain.Role;
+import com.springboot.example.springbootexamples.domain.Role;
 import com.springboot.example.springbootexamples.repository.RoleRepository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
 package com.springboot.example.springbootexamples.controller;
 
-import com.springboot.example.springbootexamples.domain.domain.User;
+import com.springboot.example.springbootexamples.domain.User;
 import com.springboot.example.springbootexamples.service.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

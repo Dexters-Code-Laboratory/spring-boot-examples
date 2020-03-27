@@ -1,7 +1,7 @@
 package com.springboot.example.springbootexamples.service;
 
-import com.springboot.example.springbootexamples.domain.domain.Role;
-import com.springboot.example.springbootexamples.domain.domain.User;
+import com.springboot.example.springbootexamples.domain.Role;
+import com.springboot.example.springbootexamples.domain.User;
 import com.springboot.example.springbootexamples.repository.RoleRepository;
 import com.springboot.example.springbootexamples.repository.UserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

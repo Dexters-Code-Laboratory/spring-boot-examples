@@ -1,4 +1,4 @@
-package com.springboot.example.springbootexamples.domain.domain;
+package com.springboot.example.springbootexamples.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 

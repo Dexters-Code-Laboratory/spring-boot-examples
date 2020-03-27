@@ -1,6 +1,6 @@
 package com.springboot.example.springbootexamples.repoService;
 
-import com.springboot.example.springbootexamples.domain.domain.BaseEntity;
+import com.springboot.example.springbootexamples.domain.BaseEntity;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

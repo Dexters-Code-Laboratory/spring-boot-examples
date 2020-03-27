@@ -1,6 +1,6 @@
 package com.springboot.example.springbootexamples.repoService;
 
-import com.springboot.example.springbootexamples.domain.domain.User;
+import com.springboot.example.springbootexamples.domain.User;
 import com.springboot.example.springbootexamples.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;

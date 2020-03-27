@@ -1,7 +1,7 @@
 package com.springboot.example.springbootexamples.bootstrap;
 
-import com.springboot.example.springbootexamples.domain.domain.Role;
-import com.springboot.example.springbootexamples.domain.domain.User;
+import com.springboot.example.springbootexamples.domain.Role;
+import com.springboot.example.springbootexamples.domain.User;
 import com.springboot.example.springbootexamples.enums.RoleType;
 import com.springboot.example.springbootexamples.repoService.RoleRepoService;
 import com.springboot.example.springbootexamples.repoService.UserRepoService;

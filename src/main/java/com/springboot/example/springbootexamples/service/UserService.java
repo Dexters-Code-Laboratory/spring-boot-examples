@@ -1,7 +1,7 @@
 package com.springboot.example.springbootexamples.service;
 
 
-import com.springboot.example.springbootexamples.domain.domain.User;
+import com.springboot.example.springbootexamples.domain.User;
 
 //Todo remove this
 public interface UserService {
