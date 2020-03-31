@@ -1,0 +1,29 @@
+apply plugin: 'org.liquibase.gradle'
+
+diff.dependsOn assemble
+diffChangeLog.dependsOn assemble
+
+Properties applicationProps = new Properties()
+applicationProps.load(new FileInputStream("src/main/resources/application.properties"))
+
+liquibase {
+	activities {
+		main {
+			changeLogFile 'src/main/resources/db/changelog/changes/db.changelog.mysql.sql'
+//            For groovy file generation
+//            changeLogFile 'src/main/resources/db/changelog/test-changelog.groovy'
+//            For yaml file generation
+//            changeLogFile 'src/main/resources/db/changelog/test-changelog.yml'
+//            For xml file generation
+//            changeLogFile 'src/main/resources/db/changelog/test-changelog.xml'
+			url applicationProps.getProperty("spring.datasource.url")
+			username applicationProps.getProperty("spring.datasource.username")
+			password applicationProps.getProperty("spring.datasource.password")
+//            driver 'com.mysql.jdbc.Driver'
+			logLevel 'debug'
+			referenceDriver "liquibase.ext.hibernate.database.connection.HibernateDriver"
+			referenceUrl "hibernate:spring:"+applicationProps.getProperty("entity.class.package")+"?dialect="+applicationProps.getProperty("spring.jpa.properties.hibernate.dialect")
+//            outputChangeLogFile 'src/main/resources/liquibase-diff-changeLog.yaml'
+		}
+	}
+}
