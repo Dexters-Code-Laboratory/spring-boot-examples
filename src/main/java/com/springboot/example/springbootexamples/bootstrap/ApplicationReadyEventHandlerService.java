@@ -20,7 +20,7 @@ public class ApplicationReadyEventHandlerService implements ApplicationListener<
 
     Log log = LogFactory.getLog(ApplicationReadyEventHandlerService.class);
 
-    @Value("${skip.bootstrap:false}")
+    @Value("${skip.bootstrap:true}")
     Boolean skipBootstrap;
 
     private final UserRepoService userRepoService;
